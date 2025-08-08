@@ -2,4 +2,8 @@
 <?php
 chdir(__DIR__);
 require_once __DIR__ . '/vendor/autoload.php';
+
+# 添加环境变量
+\utils\Env::init();
+
 support\App::run();

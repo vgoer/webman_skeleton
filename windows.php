@@ -12,6 +12,9 @@ use Workerman\Worker;
 ini_set('display_errors', 'on');
 error_reporting(E_ALL);
 
+# 添加环境变量
+\utils\Env::init();
+
 if (class_exists('Dotenv\Dotenv') && file_exists(base_path() . '/.env')) {
     if (method_exists('Dotenv\Dotenv', 'createUnsafeImmutable')) {
         Dotenv::createUnsafeImmutable(base_path())->load();
