@@ -1,6 +1,6 @@
 <?php
 
-namespace app\library\Uploader;
+namespace utils;
 
 require './vendor/zos/aws-autoloader.php';
 
